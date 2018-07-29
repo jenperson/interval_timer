@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		365F2889210635AD003FF00B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F2888210635AD003FF00B /* AppDelegate.swift */; };
+		365F288B210635AD003FF00B /* LiveIntervalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F288A210635AD003FF00B /* LiveIntervalViewController.swift */; };
+		365F288E210635AD003FF00B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365F288C210635AD003FF00B /* Main.storyboard */; };
+		365F2890210635AE003FF00B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365F288F210635AE003FF00B /* Assets.xcassets */; };
+		365F2893210635AE003FF00B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365F2891210635AE003FF00B /* LaunchScreen.storyboard */; };
+		365F289B210635C8003FF00B /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F289A210635C8003FF00B /* Interval.swift */; };
+		365F289D21063B74003FF00B /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F289C21063B74003FF00B /* CircleView.swift */; };
+		57F5D667B11792249BE6CC29 /* Pods_interval_timer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED3740CCEC56CAC916D144C /* Pods_interval_timer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		365F2885210635AD003FF00B /* interval_timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = interval_timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		365F2888210635AD003FF00B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		365F288A210635AD003FF00B /* LiveIntervalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveIntervalViewController.swift; sourceTree = "<group>"; };
+		365F288D210635AD003FF00B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		365F288F210635AE003FF00B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		365F2892210635AE003FF00B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		365F2894210635AE003FF00B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365F289A210635C8003FF00B /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		365F289C21063B74003FF00B /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		4ED3740CCEC56CAC916D144C /* Pods_interval_timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_interval_timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD87A5372329BD65C0FE51D /* Pods-interval_timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interval_timer.release.xcconfig"; path = "Pods/Target Support Files/Pods-interval_timer/Pods-interval_timer.release.xcconfig"; sourceTree = "<group>"; };
+		FCC98D0AB37C6905E826BF03 /* Pods-interval_timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interval_timer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-interval_timer/Pods-interval_timer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		365F2882210635AD003FF00B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F5D667B11792249BE6CC29 /* Pods_interval_timer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19AFCD5747AD2932DA25AC67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCC98D0AB37C6905E826BF03 /* Pods-interval_timer.debug.xcconfig */,
+				DCD87A5372329BD65C0FE51D /* Pods-interval_timer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		365F287C210635AD003FF00B = {
+			isa = PBXGroup;
+			children = (
+				365F2887210635AD003FF00B /* interval_timer */,
+				365F2886210635AD003FF00B /* Products */,
+				19AFCD5747AD2932DA25AC67 /* Pods */,
+				9F8ACADABA3672FD2A095109 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		365F2886210635AD003FF00B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				365F2885210635AD003FF00B /* interval_timer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		365F2887210635AD003FF00B /* interval_timer */ = {
+			isa = PBXGroup;
+			children = (
+				365F2888210635AD003FF00B /* AppDelegate.swift */,
+				365F288A210635AD003FF00B /* LiveIntervalViewController.swift */,
+				365F289A210635C8003FF00B /* Interval.swift */,
+				365F289C21063B74003FF00B /* CircleView.swift */,
+				365F288C210635AD003FF00B /* Main.storyboard */,
+				365F288F210635AE003FF00B /* Assets.xcassets */,
+				365F2891210635AE003FF00B /* LaunchScreen.storyboard */,
+				365F2894210635AE003FF00B /* Info.plist */,
+			);
+			path = interval_timer;
+			sourceTree = "<group>";
+		};
+		9F8ACADABA3672FD2A095109 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ED3740CCEC56CAC916D144C /* Pods_interval_timer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		365F2884210635AD003FF00B /* interval_timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365F2897210635AE003FF00B /* Build configuration list for PBXNativeTarget "interval_timer" */;
+			buildPhases = (
+				D21E6BD17BFF12F7885DC022 /* [CP] Check Pods Manifest.lock */,
+				365F2881210635AD003FF00B /* Sources */,
+				365F2882210635AD003FF00B /* Frameworks */,
+				365F2883210635AD003FF00B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = interval_timer;
+			productName = interval_timer;
+			productReference = 365F2885210635AD003FF00B /* interval_timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		365F287D210635AD003FF00B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Jen Person";
+				TargetAttributes = {
+					365F2884210635AD003FF00B = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 365F2880210635AD003FF00B /* Build configuration list for PBXProject "interval_timer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 365F287C210635AD003FF00B;
+			productRefGroup = 365F2886210635AD003FF00B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				365F2884210635AD003FF00B /* interval_timer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		365F2883210635AD003FF00B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365F2893210635AE003FF00B /* LaunchScreen.storyboard in Resources */,
+				365F2890210635AE003FF00B /* Assets.xcassets in Resources */,
+				365F288E210635AD003FF00B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D21E6BD17BFF12F7885DC022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-interval_timer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		365F2881210635AD003FF00B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365F289D21063B74003FF00B /* CircleView.swift in Sources */,
+				365F288B210635AD003FF00B /* LiveIntervalViewController.swift in Sources */,
+				365F289B210635C8003FF00B /* Interval.swift in Sources */,
+				365F2889210635AD003FF00B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		365F288C210635AD003FF00B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				365F288D210635AD003FF00B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		365F2891210635AE003FF00B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				365F2892210635AE003FF00B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		365F2895210635AE003FF00B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		365F2896210635AE003FF00B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		365F2898210635AE003FF00B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC98D0AB37C6905E826BF03 /* Pods-interval_timer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 739D5HF686;
+				INFOPLIST_FILE = interval_timer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.interval-timer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		365F2899210635AE003FF00B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD87A5372329BD65C0FE51D /* Pods-interval_timer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 739D5HF686;
+				INFOPLIST_FILE = interval_timer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.interval-timer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		365F2880210635AD003FF00B /* Build configuration list for PBXProject "interval_timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365F2895210635AE003FF00B /* Debug */,
+				365F2896210635AE003FF00B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		365F2897210635AE003FF00B /* Build configuration list for PBXNativeTarget "interval_timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365F2898210635AE003FF00B /* Debug */,
+				365F2899210635AE003FF00B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 365F287D210635AD003FF00B /* Project object */;
+}

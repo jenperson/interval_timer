@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live Interval View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LiveIntervalViewController" customModule="interval_timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsQ-Pa-mWH">
+                                <rect key="frame" x="67" y="208" width="241" height="241"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bsQ-Pa-mWH" secondAttribute="height" multiplier="1:1" id="Th7-sn-8xw"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75L-Es-75U">
+                                <rect key="frame" x="66.5" y="208" width="241" height="241"/>
+                                <connections>
+                                    <action selector="didTapTimerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="maI-V8-YlZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1E-dj-f8r">
+                                <rect key="frame" x="144" y="314.5" width="86" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="86" id="CVk-om-YcY"/>
+                                    <constraint firstAttribute="width" priority="100" constant="86" id="dPs-WB-clF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="U1E-dj-f8r" firstAttribute="centerY" secondItem="bsQ-Pa-mWH" secondAttribute="centerY" id="KAq-Hd-BOL"/>
+                            <constraint firstItem="75L-Es-75U" firstAttribute="height" secondItem="bsQ-Pa-mWH" secondAttribute="height" id="KJQ-HK-d56"/>
+                            <constraint firstItem="75L-Es-75U" firstAttribute="width" secondItem="bsQ-Pa-mWH" secondAttribute="width" id="QDe-Sq-9zP"/>
+                            <constraint firstItem="bsQ-Pa-mWH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="188" id="TNr-4x-ZzP"/>
+                            <constraint firstItem="U1E-dj-f8r" firstAttribute="centerX" secondItem="bsQ-Pa-mWH" secondAttribute="centerX" id="h8a-Eq-lwk"/>
+                            <constraint firstItem="75L-Es-75U" firstAttribute="centerX" secondItem="bsQ-Pa-mWH" secondAttribute="centerX" id="jsp-Zd-S6x"/>
+                            <constraint firstItem="75L-Es-75U" firstAttribute="centerY" secondItem="bsQ-Pa-mWH" secondAttribute="centerY" id="mVt-dt-4pG"/>
+                            <constraint firstItem="bsQ-Pa-mWH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="naH-l8-cOM"/>
+                            <constraint firstItem="bsQ-Pa-mWH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v8Q-bt-9ag"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="circleTimerView" destination="bsQ-Pa-mWH" id="jHr-Wi-XxP"/>
+                        <outlet property="timerButton" destination="75L-Es-75U" id="Tuy-5w-Taj"/>
+                        <outlet property="timerDisplayLabel" destination="U1E-dj-f8r" id="xx7-lN-ohG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>
